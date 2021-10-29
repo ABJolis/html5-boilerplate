@@ -76,5 +76,7 @@
     "modernizr-config.json",
     "README.md"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "html5-boilerplate": "^8.0.0"
+  }
 }
