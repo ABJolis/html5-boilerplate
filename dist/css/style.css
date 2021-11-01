@@ -26,6 +26,23 @@ html {
     "content"
     "sidebar";
 }
+
+@media (min-width: 500px) {
+  .wrapper {
+    grid-template-columns: 1fr 6fr 3fr 2fr;
+    grid-template-areas:
+      "nav header header header header header header . . . sidebar"
+      "nav content content content content content content . . . sidebar";
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style: none;
+  }
+}
+
 .main-head {
   grid-area: header;
 }
