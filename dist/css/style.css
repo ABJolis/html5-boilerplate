@@ -17,6 +17,31 @@ html {
   line-height: 1.4;
 }
 
+.wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "content"
+    "sidebar";
+}
+.main-head {
+  grid-area: header;
+}
+
+.content {
+  grid-area: content;
+}
+
+.main-nav {
+  grid-area: nav;
+}
+
+.side {
+  grid-area: sidebar;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -260,4 +285,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
