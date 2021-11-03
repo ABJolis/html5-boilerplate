@@ -32,20 +32,24 @@
     <h1>
       Google Drive
     </h1>
-    <p class="eyebrow">On this page</p>
-    <ul class="page-list">
-        <li>Introduction</li>
-        <li>Communications and Resources drives</li>
-        <li>Project drive</li>
-        <li>General file handling</li>
-    </ul>
+    <nav class=page-nav>
+
+      <p class="eyebrow">On this page</p>
+      <ul class="page-list">
+        <li class="page-item" id="active-resources">Introduction</li>
+        <li class="page-item">Communications and Resources drives</li>
+        <li class="page-item">Project drive</li>
+        <li class="page-item">General file handling</li>
+      </ul>
+    </nav>
   </header>
   <nav role="navigation" class="main-nav">
     <ul class="nav-heading">
-<p>ON</p>
+<!-- <p>ON</p> -->
+<img src="icon.svg" alt="ON logo">
 <p>Design System</p>
-<li class="nav-guidelines"><a href="">Guidelines</a></li>
-<li class="nav-resources"><a href="">Resources</a></li>
+<li class="nav-guidelines" id="active-guidelines"><a href="">Guidelines</a></li>
+<li class="nav-resources" id="active-resources"><a href="">Resources</a></li>
     </ul>
     <ul aria-label="Accordion Control Group Buttons" class="accordion-controls">
         <li class="accordion-item"><a href="">Brand Assets</a>
@@ -76,7 +80,7 @@
         <li class="accordion-item"><a href="">Processes</a>            
         </li>
             <ul class="accordion-child">
-                <li><a href="">Google Drive</a></li>
+                <li class="nav-resources" id="active-resources"><a href="">Google Drive</a></li>
                 <li><a href="">Slack</a></li>
                 <li><a href="">GitHub</a></li>
                 <li><a href="">Email</a></li>
@@ -163,7 +167,7 @@
         <li><a href="">Link ↗</a></li>
       </ul>
       <h2>Last update</h2>
-      <p><sub>22 October 2021</sub></p>
+      <p>22 October 2021</p>
     </aside>
   </div>
   <!-- <script src="js/vendor/modernizr-3.11.8.min.js"></script>
