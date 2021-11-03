@@ -33,10 +33,9 @@
       Google Drive
     </h1>
     <nav class=page-nav>
-
       <p class="eyebrow">On this page</p>
       <ul class="page-list">
-        <li class="page-item" id="active-resources">Introduction</li>
+        <li class="page-item" id="active-pageItem">Introduction</li>
         <li class="page-item">Communications and Resources drives</li>
         <li class="page-item">Project drive</li>
         <li class="page-item">General file handling</li>
@@ -52,59 +51,66 @@
 <li class="nav-resources" id="active-resources"><a href="">Resources</a></li>
     </ul>
     <ul aria-label="Accordion Control Group Buttons" class="accordion-controls">
-        <li class="accordion-item"><a href="">Brand Assets</a>
-            <!-- <button aria-controls="content-1" aria-expanded="false" id="accordion-control-1" class="accordion-item">Brand assets</button> -->
+        <li class="accordion"><a href="">Brand Assets</a>
+            <!-- <button aria-controls="content-1" aria-expanded="false" id="accordion-control-1" class="accordion">Brand assets</button> -->
+            <ul class="accordion__child">
+              <li><a href="">Logo</a></li>
+              <li><a href="">Fonts</a></li>
+              <li><a href="">Colours</a></li>
+              <li><a href="">Illustrations</a></li>
+              <li><a href="">Icons</a></li>
+            </ul>
           </li>
-            <ul class="accordion-child">
-                <li><a href="">Logo</a></li>
-                <li><a href="">Fonts</a></li>
-                <li><a href="">Colours</a></li>
-                <li><a href="">Illustrations</a></li>
-                <li><a href="">Icons</a></li>
-            </ul>
-        <li class="accordion-item"><a href="">Templates</a>
+        <li class="accordion"><a href="">Templates</a>
+          <ul class="accordion__child">
+            <li><a href="">Letterheads</a></li>
+            <li><a href="">Presentation kit</a></li>
+            <li><a href="">Credentials kit</a></li>
+            <li><a href="">Spreadsheets</a></li>
+            <li><a href="">Invoices</a></li>
+            <li><a href="">Figma templates</a></li>
+          </ul>
         </li>
-            <ul class="accordion-child">
-                <li><a href="">Letterheads</a></li>
-                <li><a href="">Presentation kit</a></li>
-                <li><a href="">Credentials kit</a></li>
-                <li><a href="">Spreadsheets</a></li>
-                <li><a href="">Invoices</a></li>
-                <li><a href="">Figma templates</a></li>
-            </ul>
-        <li class="accordion-item"><a href="">Project archive</a>
+        <li class="accordion"><a href="">Project archive</a>
+          <ul  class="accordion__child">
+            <li><a href="">Project list</a></li>
+          </ul>
         </li>
-            <ul class="accordion-child">
-                <li><a href="">Project list</a></li>
+          <li class="accordion"><a href="">Processes</a>            
+            <ul  class="accordion__child">
+              <li class="nav-resources" id="active-resources"><a href="">Google Drive</a></li>
+              <li><a href="">Slack</a></li>
+              <li><a href="">GitHub</a></li>
+              <li><a href="">Email</a></li>
             </ul>
-        <li class="accordion-item"><a href="">Processes</a>            
+          </li>
+        <li class="accordion"><a href="">Training & education</a>
+          <ul  class="accordion__child">
+            <li><a href="">Tutorials</a></li>
+          </ul>
         </li>
-            <ul class="accordion-child">
-                <li class="nav-resources" id="active-resources"><a href="">Google Drive</a></li>
-                <li><a href="">Slack</a></li>
-                <li><a href="">GitHub</a></li>
-                <li><a href="">Email</a></li>
-            </ul>
-        <li class="accordion-item"><a href="">Training & education</a>
-        </li>
-            <ul class="accordion-child">
-                <li><a href="">Tutorials</a></li>
-            </ul>
-        <li class="accordion-item"><a href="">Glossary</a></li>
+        <li class="accordion"><a href="">Glossary</a></li>
             </ul>
   </nav>
   <section class="content">
+    <h2 class="sr-only">Hidden!</h2>
+    <!--title - even if visually hidden-->
 
     <article>
       <h2>
         Introduction
       </h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dui sapien, lobortis nec ex id, pellentesque fringilla odio. Sed quis turpis sed ipsum mattis fermentum. Ut non risus sed lacus lacinia fermentum id placerat erat. In tortor nisl, condimentum eget ullamcorper eu, tincidunt congue massa. Nullam ultricies velit sagittis, volutpat magna sit amet, luctus velit. Aliquam condimentum dignissim nisi eu molestie. Curabitur hendrerit diam eu massa pulvinar volutpat. Donec auctor aliquet lectus, ac sodales felis semper quis. Phasellus egestas est id erat dignissim, nec aliquam massa fermentum.
+        This document sets out the overall folder structure of the ON drives, as well as general file handling which includes naming conventions and sharing settings. This document is an interim readme prior to the new Design System, which will incorporate these standards.
       </p>
-      <p class="purple">
-        Quisque a ligula magna. Praesent felis tellus, volutpat in suscipit id, consectetur ut dui. Ut id ex dui. Proin lobortis, urna id gravida ultricies, nibh est tincidunt justo, at ultrices lacus ex a urna. Quisque vulputate pretium est, consequat molestie ligula lobortis quis. Maecenas nec accumsan lacus. Etiam ac mi tellus. Nunc auctor est vitae ligula rhoncus, lobortis faucibus erat facilisis.
+      <p>
+        When saving files on Google Drive, files should always be able to be stored on any of the 3 main Shared Drives – if you’re unsure where to save a file, new folders can always be added. The use of My Drive should be very limited, and ideally avoided.
       </p>
+      <p>
+        All our files sit in these 3 main drives:
+      </p>
+      <dl></dl>
+
     </article>
     <article>
       <h2>
@@ -154,20 +160,23 @@
     </article>
   </section>
     <aside class="side">
-      <h2>Resources</h2>
-      <ul>
-        <li><a href="">Link ↗</a></li>
-        <li><a href="">Link ↗</a></li>
-        <li><a href="">Link ↗</a></li>
-      </ul>
-      <h2>Other links</h2>
-      <ul>
-        <li><a href="">Link ↗</a></li>
-        <li><a href="">Link ↗</a></li>
-        <li><a href="">Link ↗</a></li>
-      </ul>
-      <h2>Last update</h2>
-      <p>22 October 2021</p>
+      <div class="sidebar">
+
+        <h2>Resources</h2>
+        <ul>
+          <li><a href="">Link ↗</a></li>
+          <li><a href="">Link ↗</a></li>
+          <li><a href="">Link ↗</a></li>
+        </ul>
+        <h2>Other links</h2>
+        <ul>
+          <li><a href="">Link ↗</a></li>
+          <li><a href="">Link ↗</a></li>
+          <li><a href="">Link ↗</a></li>
+        </ul>
+        <h2>Last update</h2>
+        <p>22 October 2021</p>
+      </div>
     </aside>
   </div>
   <!-- <script src="js/vendor/modernizr-3.11.8.min.js"></script>
