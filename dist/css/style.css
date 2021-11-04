@@ -153,7 +153,7 @@ header ul {
   border-radius: 4px;
   padding: 4px;
   text-decoration: none;
-  line-height: 3;
+  /* line-height: 3; */
 }
 .nav-guidelines a {
   color: #828282;
