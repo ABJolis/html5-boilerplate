@@ -42,7 +42,7 @@ aside ul {
   padding-left: 0;
 }
 .accordion {
-  margin-top: 32px;
+  margin-top: 16px;
 }
 .accordion a {
   color: black;
@@ -51,6 +51,11 @@ aside ul {
 .accordion__child a {
   color: #828282;
   text-decoration: none;
+}
+
+.accordion__child li {
+  line-height: 1.2;
+  margin-top: 10px;
 }
 .eyebrow {
   color: #828282;
