@@ -1,17 +1,18 @@
-function hours() {
-  let hour = 0;
-  for (let i = 0; i < 24; i++) {
-    hour += 1;
-    console.log(`${hour}:`);
-  }
-}
+/* eslint-disable quotes */
+// (function () {
+//   const categories = document.querySelectorAll("li.category");
 
-function minutes() {
-  let minute = 0;
-  for (let j = 0; j < 12; j++) {
-    minute += 5;
-    console.log(`${minute}`);
-  }
-}
+//   Array.prototype.forEach.call(categories, (category) => {
+//     let btn = category.querySelector("button");
+//     let target = category.nextElementSibling;
 
-console.log(`${hours()} ${minutes()}`);
+//     btn.onClick = () => {
+//       alert("button was clicked!");
+//       console.log("button was clicked!");
+//       let expanded = btn.getAttribute("aria-expanded") === "true" || false;
+
+//       btn.setAttribute("aria-expanded", !expanded);
+//       target.hidden = expanded;
+//     };
+//   });
+// });

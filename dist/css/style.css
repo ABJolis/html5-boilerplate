@@ -20,14 +20,6 @@ html {
 body {
   font-family: sans-serif;
 }
-.wrapper {
-  display: grid;
-  grid-template-columns: 2fr 6fr 1fr 2fr 1fr;
-  grid-template-rows: minmax(min-content, 170px) 1fr 1fr 1fr 1fr 1fr 6fr;
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 1fr;
-  grid-gap: 1em 1em;
-}
 /*nav uls*/
 nav ul {
   display: flex;
@@ -41,19 +33,47 @@ aside ul {
   list-style: none;
   padding-left: 0;
 }
-.accordion {
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 6fr 1fr 2fr 1fr;
+  grid-template-rows: minmax(min-content, 170px) 1fr 1fr 1fr 1fr 1fr 6fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-gap: 1em 1em;
+}
+
+/*main nav*/
+/*accordion button*/
+
+li button {
+  all: inherit;
+  display: inline;
+}
+
+/* li button:hover svg {
+  outline: 2px solid;
+} */
+/* [aria-expanded] path {
+  fill: currentColor;
+} */
+
+[aria-expanded="true"] .vert {
+  display: none;
+}
+
+.category {
   margin-top: 16px;
 }
-.accordion a {
+/* .category a {
   color: black;
   text-decoration: none;
-}
-.accordion__child a {
+} */
+.category__child a {
   color: #828282;
   text-decoration: none;
 }
 
-.accordion__child li {
+.category__child li {
   line-height: 1.2;
   margin-top: 10px;
 }
