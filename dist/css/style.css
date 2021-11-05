@@ -33,11 +33,6 @@ aside ul {
   list-style: none;
   padding-left: 0;
 }
-/*accordion controls*/
-li button {
-  all: inherit;
-  display: inline;
-}
 
 .wrapper {
   display: grid;
@@ -47,6 +42,21 @@ li button {
   grid-auto-rows: 1fr;
   grid-gap: 1em 1em;
 }
+
+/*main body styling*/
+.warning {
+  background-color: rgba(244, 105, 105, 0.1);
+  border: 1px solid #f46969;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 0;
+}
+/*accordion controls*/
+li button {
+  all: inherit;
+  display: inline;
+}
+
 .category {
   margin-top: 16px;
   /* margin-bottom: 10px; */
@@ -154,14 +164,14 @@ header ul {
 }
 
 /*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
+     * Remove text-shadow in selection highlight:
+     * https://twitter.com/miketaylr/status/12228805301
+     *
+     * Vendor-prefixed and regular ::selection selectors cannot be combined:
+     * https://stackoverflow.com/a/16982510/7133471
+     *
+     * Customize the background color to match your design.
+     */
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -174,8 +184,8 @@ header ul {
 }
 
 /*
- * A better looking default horizontal rule
- */
+     * A better looking default horizontal rule
+     */
 
 hr {
   display: block;
@@ -187,10 +197,10 @@ hr {
 }
 
 /*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
+     * Remove the gap between audio, canvas, iframes,
+     * images, videos and the bottom of their containers:
+     * https://github.com/h5bp/html5-boilerplate/issues/440
+     */
 
 audio,
 canvas,
@@ -202,8 +212,8 @@ video {
 }
 
 /*
- * Remove default fieldset styles.
- */
+     * Remove default fieldset styles.
+     */
 
 fieldset {
   border: 0;
@@ -212,24 +222,24 @@ fieldset {
 }
 
 /*
- * Allow only vertical resizing of textareas.
- */
+     * Allow only vertical resizing of textareas.
+     */
 
 textarea {
   resize: vertical;
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+       Author's custom styles
+       ========================================================================== */
 
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
+       Helper classes
+       ========================================================================== */
 
 /*
- * Hide visually and from screen readers
- */
+     * Hide visually and from screen readers
+     */
 
 .hidden,
 [hidden] {
@@ -237,13 +247,13 @@ textarea {
 }
 
 /*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
+     * Hide only visually, but have it available for screen readers:
+     * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+     *
+     * 1. For long content, line feeds are not interpreted as spaces and small width
+     *    causes content to wrap 1 word per line:
+     *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+     */
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -258,10 +268,10 @@ textarea {
 }
 
 /*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
+     * Extends the .sr-only class to allow the element
+     * to be focusable when navigated to via the keyboard:
+     * https://www.drupal.org/node/897638
+     */
 
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
@@ -275,24 +285,24 @@ textarea {
 }
 
 /*
- * Hide visually and from screen readers, but maintain layout
- */
+     * Hide visually and from screen readers, but maintain layout
+     */
 
 .invisible {
   visibility: hidden;
 }
 
 /*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
+     * Clearfix: contain floats
+     *
+     * For modern browsers
+     * 1. The space content is one way to avoid an Opera bug when the
+     *    `contenteditable` attribute is included anywhere else in the document.
+     *    Otherwise it causes space to appear at the top and bottom of elements
+     *    that receive the `clearfix` class.
+     * 2. The use of `table` rather than `block` is only necessary if using
+     *    `:before` to contain the top-margins of child elements.
+     */
 
 .clearfix::before,
 .clearfix::after {
@@ -304,10 +314,10 @@ textarea {
   clear: both;
 }
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+       EXAMPLE Media Queries for Responsive Design.
+       These examples override the primary ('mobile first') styles.
+       Modify as content requires.
+       ========================================================================== */
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
@@ -321,10 +331,10 @@ textarea {
 }
 
 /* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+       Print styles.
+       Inlined to avoid the additional HTTP request:
+       https://www.phpied.com/delay-loading-your-print-css/
+       ========================================================================== */
 
 @media print {
   *,
@@ -351,9 +361,9 @@ textarea {
   }
 
   /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
+       * Don't show links that are fragment identifiers,
+       * or use the `javascript:` pseudo protocol
+       */
   a[href^="#"]::after,
   a[href^="javascript:"]::after {
     content: "";
@@ -370,9 +380,9 @@ textarea {
   }
 
   /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
+       * Printing Tables:
+       * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+       */
   thead {
     display: table-header-group;
   }
